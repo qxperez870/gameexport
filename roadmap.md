@@ -1,0 +1,18 @@
+# GAMEEXPORT
+- [ ] Integrate real Steam data without API key: public appdetails endpoint with cache, comparables per game, reproducible market metrics, strategy and game-specific AI context. Catalog sync via IStoreService stays an optional pending integration until a Steam key exists; commercial-use review pending.
+- [x] Move the game and market-position panels directly below the summary heading, before country priorities; verified heading order in the live UI.
+- [x] Diagnose login and registration: both return HTTP 521; show a service-unavailable message instead of blaming user input and preserve registration password minimum only for registration.
+- [ ] Restore and verify successful login and registration: blocked by Lovable Cloud remaining in a starting state and returning HTTP 521; requires infrastructure recovery.
+- [x] Add prioritized countries with reasons and explicit demonstration-data limits; verified on summary, market and opportunities pages without runtime errors.
+- [x] Prevent mixed React dependency-cache generations by pre-optimizing shared UI packages; verify fresh home/auth/register/market loads and dialog interaction without runtime errors.
+- [x] Create Spanish commercial intelligence page with top-right account links.
+- [x] Enable registration, login, recovery, and private user profiles.
+- [x] Verify page navigation, registration fields, invalid-login feedback, and small-screen layout; compilation is successful.
+- [ ] Verify confirmed registration, recovery email, and signed-in profile save/read: blocked by unavailable Cloud auth and database; account availability is currently unverified.
+- [x] Publish the app so account emails (including password recovery) open the public address instead of the private preview that asks for access.
+- [x] Stack every workspace section vertically at full content width, so "Tu posición en el mercado" sits below "Mi videojuego" instead of beside it; verified on summary, games, market, opportunities, actions and assistant views.
+- [ ] Re-publish so the published address shows the stacked full-width layout.
+- [ ] Confirm password recovery end to end on the published address: requires the user to request a fresh link and set a new password there.- [x] Summary country cards show only 'Por qué evaluarlo'; 'Qué falta comprobar' stays in market/opportunities views.
+- [x] Premium gating of Estrategia, Próximas acciones and GAMEEXPORT AI; AI chat with saved conversations.
+- [ ] Premium checkout at US$20/month (blocked: workspace plan upgrade).
+- [ ] Connect documentation to GAMEEXPORT AI (blocked: user will provide docs).
